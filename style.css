@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+@font-face {
+	font-family: 'monterrat';
+	src: url('./fonts/montserrat-variablefont_wght-webfont.woff') format('woff'),
+		url('./fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2');
+	font-weight: thin;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sprectral';
+	src: url('./fonts/spectral-bolditalic-webfont.woff') format('woff'),
+		url('./fonts/spectral-bolditalic-webfont.woff2') format('woff2');
+		font-weight: bold;
+		font-style: italic;
+}
+
