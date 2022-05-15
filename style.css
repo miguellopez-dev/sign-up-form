@@ -24,3 +24,51 @@ body {
 		font-style: italic;
 }
 
+.container	{
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	background-image: url('./img/sakura-bg.jpeg');
+	object-fit: cover;
+	object-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+	padding: 10rem 0;
+}
+
+.logo-container {
+	background-color: rgba(0, 0, 0, .4);
+	width:100%;
+	margin: auto;
+	padding: 1rem 3rem;
+	
+
+}
+
+.logo-leaf svg {
+	width: 2rem;
+}
+
+.logo-leaf path {
+	fill: #fff;
+
+}
+
+
+
+
+.logo {
+	color: #fff;
+	font-size: 2rem;
+	font-family: 'sprectral';
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	width: 40%;
+	max-width: 220px;
+	margin: auto;
+}
+
