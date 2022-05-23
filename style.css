@@ -70,10 +70,8 @@ body {
 	max-width: 220px;
 	margin: auto;
 }
-
-.main-top {
+.main {
 	background-color: rgb(245, 245, 245);
-	
 }
 
 .main-container {
@@ -90,6 +88,7 @@ body {
 
 .main-form {
 	box-shadow: 0px 8px 10px rgba(125, 125, 125, 0.5);
+	background-color: white;
 }
 
 .form-input-container {
@@ -119,12 +118,18 @@ body {
 
 
 
-input {
+input[type='text'], 
+input[type='email'], 
+input[type='tel'], 
+input[type='password'] { 
 	border: 1px solid #ccc;
 	background-color: #eee;
 }
 
-input:focus {
+input[type='text']:focus, 
+input[type='email']:focus, 
+input[type='tel']:focus, 
+input[type='password']:focus {
 	background-color: white;
 	outline: 0;
 }
@@ -151,4 +156,27 @@ input:not(:placeholder-shown):valid {
 	font-style: italic;
   }
 
+.main-bottom button {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	box-shadow: 0 1px 1px rgba(125, 125, 125, 0.5);
+	background-color: #ffeaee;
+	color: #EF3340;
+	border-radius: 10px;
+	padding: .7rem 2rem;
+}
 
+.main-bottom button:hover,
+.main-bottom button:focus {
+	border: #EF3340 1px solid;
+}
+
+.main-bottom p {
+	font-size: .8rem;
+	margin-top: 1.5rem;
+}
+
+.main-bottom span {
+	color: #EF3340;
+}
