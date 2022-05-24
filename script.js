@@ -12,6 +12,7 @@ phone.addEventListener('keydown', (e) => {
 	}
 });
 
+//Confirms passwords match
 const checkPassword = function () {
 	if (password.value != confirmPassword.value) {
 		confirmPassword.setCustomValidity('Passwords do not match');
