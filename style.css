@@ -31,12 +31,16 @@ body {
 	flex-direction: column;
 }
 
-.banner {
+.header{
 	background-image: url('./img/sakura-bg.jpeg');
 	object-fit: cover;
 	object-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.banner {
+
 	height: 40vh;
 	display: flex;
 	align-items: center;
@@ -125,6 +129,7 @@ input[type='tel'],
 input[type='password'] { 
 	border: 1px solid #ccc;
 	background-color: #eee;
+	border-radius: 5px;
 }
 
 input[type='text']:focus, 
@@ -133,6 +138,8 @@ input[type='tel']:focus,
 input[type='password']:focus {
 	background-color: white;
 	outline: 0;
+	border: blue 1px solid;
+	box-shadow: 0 0 3px 3px rgba(125, 125, 125, 0.5);
 }
 
 input:not(:placeholder-shown):valid {
@@ -162,7 +169,7 @@ input:not(:placeholder-shown):valid {
 	outline: none;
 	border: none;
 	box-shadow: 0 1px 1px rgba(125, 125, 125, 0.5);
-	background-color: #ffeaee;
+	background-color: #ffe9ec;
 	color: #EF3340;
 	border-radius: 10px;
 	padding: .7rem 2rem;
@@ -180,4 +187,61 @@ input:not(:placeholder-shown):valid {
 
 .main-bottom span {
 	color: #EF3340;
+}
+
+@media screen and (min-width: 640px) {
+	.main-container {
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1005px) {
+	.container {
+		flex-direction: row;
+	}
+	
+	.header {
+		width: 40%;
+		height: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+		background-image: url('./img/sakura-bg.jpeg');
+		object-fit: cover;
+		object-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+
+	.banner {
+		height: 100%;
+	}
+
+	.main {
+		width: 60%;
+		margin-left: 40%;
+	}
+
+	.main-container{
+		width: 100%;
+	}
+
+	.top-section {
+		width: 90%;
+		margin-top: 4rem;
+	}
+
+	.main-container form {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+
+	.form-input-container {
+		width: 40%;
+	}
 }
