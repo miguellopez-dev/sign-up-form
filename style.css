@@ -224,15 +224,18 @@ input:not(:placeholder-shown):valid {
 	.main {
 		width: 60%;
 		margin-left: 40%;
+		
 	}
 
 	.main-container{
 		width: 100%;
+		
 	}
 
 	.top-section {
 		width: 90%;
 		margin-top: 4rem;
+		max-width: 1108px;
 	}
 
 	.main-container form {
@@ -243,5 +246,10 @@ input:not(:placeholder-shown):valid {
 
 	.form-input-container {
 		width: 40%;
+		
+	}
+
+	form {
+		max-width: 1108px;
 	}
 }
