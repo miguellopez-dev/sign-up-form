@@ -203,7 +203,7 @@ input:not(:placeholder-shown):valid {
 	
 	.header {
 		width: 40%;
-		height: 100%;
+		height: 100vh;
 		position: fixed;
 		z-index: 1;
 		top: 0;
@@ -218,7 +218,7 @@ input:not(:placeholder-shown):valid {
 	}
 
 	.banner {
-		height: 100%;
+		height: 100vh;
 	}
 
 	.main {
